@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Navegação Segura — Portal de Inclusão Digital</title>
+<meta name="description" content="Aprenda a criar senhas fortes, reconhecer golpes digitais e navegar com segurança na internet.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=Atkinson+Hyperlegible:wght@400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+<a class="pular-conteudo" href="#conteudo-principal">Pular para o conteúdo</a>
+
+<header class="cabecalho">
+  <div class="barra-acessibilidade">
+    <div class="container">
+      <span>Acessibilidade:</span>
+      <button type="button" class="botao-acess" id="botao-fonte-menos" aria-label="Diminuir tamanho da letra">A−</button>
+      <button type="button" class="botao-acess" id="botao-fonte-mais" aria-label="Aumentar tamanho da letra">A+</button>
+      <button type="button" class="botao-acess" id="botao-contraste" aria-pressed="false" aria-label="Ativar alto contraste">Alto contraste</button>
+    </div>
+  </div>
+  <nav class="nav-principal" aria-label="Navegação principal">
+    <div class="container">
+      <a class="marca" href="../index.html">
+        <svg class="icone-escudo" viewBox="0 0 48 48" aria-hidden="true">
+          <path d="M24 4 L44 12 V22 C44 33 36 41 24 45 C12 41 4 33 4 22 V12 Z" fill="#4F6E93"/>
+          <path d="M24 10 L38 15.5 V22 C38 30.5 32.5 36.5 24 39.5 C15.5 36.5 10 30.5 10 22 V15.5 Z" fill="#1F3A2E"/>
+          <path d="M16 24 L21.5 29.5 L33 17" fill="none" stroke="#F7F2E7" stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+        <span class="marca-texto">Portal de Inclusão Digital<small>Canela e Gramado · RS</small></span>
+      </a>
+      <button type="button" class="botao-menu" id="botao-menu" aria-expanded="false" aria-controls="links-nav" aria-label="Abrir menu">☰ Menu</button>
+      <ul class="links-nav" id="links-nav">
+        <li><a href="../index.html">Início</a></li>
+        <li><a href="informatica-basica.html">Informática Básica</a></li>
+        <li><a href="navegacao-segura.html" aria-current="page">Navegação Segura</a></li>
+        <li><a href="servicos-digitais.html">Serviços Digitais</a></li>
+        <li><a href="../certificado.html">Certificado</a></li>
+        <li><a href="../sobre.html">Sobre o projeto</a></li>
+      </ul>
+    </div>
+  </nav>
+</header>
+
+<main id="conteudo-principal">
+  <section class="cabecalho-modulo" style="background:linear-gradient(180deg, var(--verde-pinheiro), #24382c);">
+    <div class="container">
+      <p style="color:var(--hortensia-clara); font-weight:700; margin-bottom:0.4rem;">Parada 2 de 3 · O módulo mais importante</p>
+      <h1>Navegação Segura</h1>
+      <p>Este é o abrigo contra os golpes. Vamos aprender, com calma, a reconhecer o perigo antes que ele entre.</p>
+    </div>
+  </section>
+
+  <section class="secao">
+    <div class="container miolo-modulo">
+      <p class="trilha-migalhas"><a href="../index.html">Início</a> → Navegação Segura</p>
+
+      <article class="licao">
+        <h2>1. Senhas fortes: a porta trancada da sua vida digital</h2>
+        <p>A senha é como a chave da sua casa. Uma senha fraca é como deixar a porta destrancada.</p>
+        <ul class="lista-checagem">
+          <li>Use pelo menos 8 caracteres, misturando letras, números e símbolos.</li>
+          <li>Nunca use datas de nascimento, nome de familiares ou sequências como "123456".</li>
+          <li>Use uma senha <strong>diferente</strong> para cada serviço importante (banco, e-mail, redes sociais). Se uma vazar, as outras continuam seguras.</li>
+          <li>Sempre que possível, ative a <strong>verificação em duas etapas</strong>: além da senha, o serviço pede um código enviado por SMS ou aplicativo. Mesmo que alguém descubra sua senha, não conseguirá entrar sem esse código.</li>
+        </ul>
+        <div class="caixa-dica">
+          <h4>💡 Como lembrar várias senhas</h4>
+          <p>Uma boa estratégia é criar uma frase fácil de lembrar e transformá-la em senha. Por exemplo, "Eu amo Canela desde 1998!" pode virar <em>EuAmoCanela1998!</em>. Anote suas senhas em um caderno físico guardado em casa, longe de olhares curiosos — nunca em papéis colados no computador.</p>
+        </div>
+      </article>
+
+      <article class="licao">
+        <h2>2. Reconhecendo golpes (phishing)</h2>
+        <p><strong>Phishing</strong> é quando alguém finge ser uma empresa, banco ou pessoa conhecida para roubar seus dados ou dinheiro. Pode chegar por e-mail, WhatsApp, SMS ou ligação telefônica.</p>
+        <p>Sinais de alerta que aparecem quase sempre nesses golpes:</p>
+        <ul class="lista-perigos">
+          <li><strong>Urgência exagerada:</strong> "Sua conta será bloqueada em 1 hora", "Última chance", "Aja agora".</li>
+          <li><strong>Pedido de dados sigilosos:</strong> senha completa, código de verificação, número do cartão. Bancos e órgãos oficiais <u>nunca</u> pedem isso por telefone, e-mail ou mensagem.</li>
+          <li><strong>Links suspeitos:</strong> endereços estranhos, com letras trocadas (ex.: "bancoo-brasil.com" em vez do site oficial).</li>
+          <li><strong>Erros de português</strong> ou formatação estranha na mensagem.</li>
+          <li><strong>Ofertas boas demais para ser verdade:</strong> prêmios que você não concorreu, heranças, promoções milagrosas.</li>
+        </ul>
+        <div class="caixa-alerta">
+          <h4>⚠ Regra de ouro</h4>
+          <p>Na dúvida, <strong>não clique</strong>. Entre em contato com a empresa ou pessoa por um canal que você já conhece (o telefone que está no verso do seu cartão, o site que você mesmo digitou) — nunca pelo link ou número que a mensagem suspeita ofereceu.</p>
+        </div>
+        <div class="moldura-video" aria-hidden="true">
+          <p>🎥 Espaço reservado para vídeo demonstrativo: "Como identificar uma mensagem falsa de banco" (adicionar link do vídeo gravado com a comunidade aqui).</p>
+        </div>
+      </article>
+
+      <article class="licao">
+        <h2>3. Golpes comuns no Brasil hoje</h2>
+        <ul class="lista-perigos">
+          <li><strong>Golpe do PIX:</strong> pedem para você fazer uma transferência urgente para "resolver um problema" ou "liberar um prêmio". Uma transferência PIX não pode ser desfeita com facilidade — desconfie sempre de pedidos de PIX urgentes.</li>
+          <li><strong>Falso motoboy/entrega:</strong> ligam dizendo que uma encomenda está retida e pedem pagamento de "taxa" por PIX ou link. Encomendas reais não funcionam assim.</li>
+          <li><strong>Golpe do parente em apuros:</strong> uma mensagem de um número desconhecido diz ser um filho ou neto "com o celular quebrado", pedindo dinheiro com urgência. Ligue para o número de telefone que você já tem salvo dessa pessoa antes de fazer qualquer pagamento.</li>
+          <li><strong>Falso suporte técnico:</strong> alguém liga se identificando como "técnico do seu banco ou operadora" e pede para você instalar um aplicativo ou informar senhas. Desligue e ligue você mesmo para o número oficial.</li>
+          <li><strong>WhatsApp clonado:</strong> um contato conhecido (na verdade, o número foi roubado ou clonado) pede dinheiro emprestado ou um código de verificação. Sempre confirme por ligação de voz antes de ajudar.</li>
+        </ul>
+      </article>
+
+      <article class="licao">
+        <h2>4. Cuidados em redes sociais</h2>
+        <ul class="lista-checagem">
+          <li>Ajuste sua privacidade para que só amigos vejam suas publicações.</li>
+          <li>Evite publicar em tempo real onde você está (isso pode indicar que sua casa está vazia).</li>
+          <li>Nunca compartilhe fotos de documentos (RG, CPF, cartão) em nenhuma rede social ou conversa, mesmo com pessoas conhecidas.</li>
+          <li>Desconfie de pedidos de amizade de perfis com poucas fotos ou poucos amigos em comum.</li>
+        </ul>
+      </article>
+
+      <article class="licao">
+        <h2>5. Mantendo o aparelho protegido</h2>
+        <ul class="lista-checagem">
+          <li>Mantenha o sistema e os aplicativos sempre atualizados — as atualizações corrigem falhas de segurança.</li>
+          <li>Instale aplicativos apenas pelas lojas oficiais (Google Play ou App Store).</li>
+          <li>Faça backup (cópia extra) de fotos e documentos importantes, em nuvem ou em outro aparelho.</li>
+        </ul>
+      </article>
+
+      <article class="licao">
+        <h2>6. Se você já caiu em um golpe: o que fazer agora</h2>
+        <div class="caixa-alerta">
+          <h4>⚠ Não se culpe — aja rápido</h4>
+          <p>Golpes são feitos por profissionais treinados para enganar qualquer pessoa. O importante é agir rápido:</p>
+        </div>
+        <ol style="padding-left:1.3rem;">
+          <li>Troque imediatamente as senhas das contas afetadas.</li>
+          <li>Entre em contato com seu banco pelo telefone oficial (verso do cartão) para bloquear transações e cartões.</li>
+          <li>Registre um Boletim de Ocorrência (pode ser feito online, na Delegacia Eletrônica) e denuncie ao Procon.</li>
+          <li>Avise amigos e familiares, caso o golpe tenha usado seu WhatsApp ou redes sociais, para que eles não sejam enganados também.</li>
+        </ol>
+      </article>
+
+      <div id="quiz-container"></div>
+    </div>
+  </section>
+</main>
+
+<footer class="rodape">
+  <div class="container">
+    <div>
+      <h4>Portal de Inclusão Digital</h4>
+      <p style="color:var(--hortensia-clara); max-width:40ch;">Projeto de Atividade Extensionista voltado às comunidades de Canela e Gramado, na Serra Gaúcha (RS).</p>
+    </div>
+    <div>
+      <h4>Módulos</h4>
+      <ul>
+        <li><a href="informatica-basica.html">Informática Básica</a></li>
+        <li><a href="navegacao-segura.html">Navegação Segura</a></li>
+        <li><a href="servicos-digitais.html">Serviços Digitais</a></li>
+      </ul>
+    </div>
+    <div>
+      <h4>Projeto</h4>
+      <ul>
+        <li><a href="../sobre.html">Sobre o projeto</a></li>
+        <li><a href="../certificado.html">Emitir certificado</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="linha-rodape">
+    © 2026 VithTech — Todos os direitos reservados.
+  </div>
+</footer>
+
+<script>
+  window.CHAVE_MODULO = "navegacao";
+  window.DADOS_QUIZ = [
+    {
+      pergunta: "Qual dessas é a senha mais segura?",
+      opcoes: ["12345678", "MariaEugenio1965", "Ser@Gaucha!47xt"],
+      correta: 2,
+      explicacao: "Senhas fortes misturam letras maiúsculas, minúsculas, números e símbolos, e evitam nomes ou datas pessoais."
+    },
+    {
+      pergunta: "Você recebe uma mensagem: 'Sua conta será bloqueada em 1 hora, clique aqui para regularizar'. O que isso indica?",
+      opcoes: ["É urgente, deve clicar imediatamente", "É um sinal clássico de golpe (urgência exagerada)", "Só bancos enviam esse tipo de aviso"],
+      correta: 1,
+      explicacao: "Criar urgência é uma das táticas mais comuns de golpes digitais, para que a pessoa não pare para pensar."
+    },
+    {
+      pergunta: "Um número desconhecido no WhatsApp diz ser seu neto e pede PIX urgente porque quebrou o celular. O que fazer?",
+      opcoes: ["Fazer o PIX imediatamente para ajudar", "Ligar para o número já salvo do neto antes de qualquer pagamento", "Responder pedindo mais detalhes pelo mesmo chat"],
+      correta: 1,
+      explicacao: "Sempre confirme por uma ligação de voz para o número que você já conhece, antes de enviar qualquer valor."
+    },
+    {
+      pergunta: "Uma pessoa liga se identificando como 'técnico do banco' e pede sua senha completa. Você deve:",
+      opcoes: ["Informar a senha, pois é o banco ligando", "Desligar e ligar você mesmo para o número oficial do banco", "Enviar a senha por SMS para confirmar"],
+      correta: 1,
+      explicacao: "Bancos nunca pedem senha completa por telefone. Desligue e ligue para o número oficial impresso no cartão."
+    },
+    {
+      pergunta: "Para que serve a verificação em duas etapas?",
+      opcoes: ["Para deixar o login mais lento sem necessidade", "Para exigir um código extra além da senha, dificultando o acesso de golpistas", "Para trocar a senha automaticamente"],
+      correta: 1,
+      explicacao: "Mesmo que a senha seja descoberta, o código extra impede que outra pessoa entre na sua conta."
+    },
+    {
+      pergunta: "É seguro compartilhar uma foto do seu RG ou cartão em uma conversa de WhatsApp com um contato conhecido?",
+      opcoes: ["Sim, se a pessoa é conhecida", "Não, documentos e dados de cartão nunca devem ser compartilhados assim", "Sim, desde que apague a foto depois"],
+      correta: 1,
+      explicacao: "Contas podem ser clonadas ou invadidas. Documentos e dados de cartão não devem circular por mensagens."
+    },
+    {
+      pergunta: "Você recebe uma ligação avisando que uma encomenda está 'retida' e pede pagamento de taxa por PIX. Isso é:",
+      opcoes: ["Normal, encomendas sempre pedem taxas assim", "Um golpe comum (falso motoboy/entrega)", "Só acontece com compras internacionais"],
+      correta: 1,
+      explicacao: "Encomendas legítimas não cobram 'taxas de liberação' por PIX ou link enviado por ligação ou mensagem."
+    },
+    {
+      pergunta: "Se você perceber que caiu em um golpe, qual deve ser o primeiro passo?",
+      opcoes: ["Não contar para ninguém, por vergonha", "Trocar senhas e contatar o banco pelo telefone oficial imediatamente", "Esperar alguns dias para ver o que acontece"],
+      correta: 1,
+      explicacao: "Agir rápido — trocando senhas e contatando o banco pelo canal oficial — reduz bastante os danos."
+    }
+  ];
+</script>
+<script src="../js/quiz.js"></script>
+<script src="../js/main.js"></script>
+</body>
+</html>

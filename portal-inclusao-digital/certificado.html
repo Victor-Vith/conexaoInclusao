@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Certificado — Portal de Inclusão Digital</title>
+<meta name="description" content="Acompanhe seu progresso e emita seu certificado de conclusão do Portal de Inclusão Digital.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=Atkinson+Hyperlegible:wght@400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<a class="pular-conteudo" href="#conteudo-principal">Pular para o conteúdo</a>
+
+<header class="cabecalho">
+  <div class="barra-acessibilidade">
+    <div class="container">
+      <span>Acessibilidade:</span>
+      <button type="button" class="botao-acess" id="botao-fonte-menos" aria-label="Diminuir tamanho da letra">A−</button>
+      <button type="button" class="botao-acess" id="botao-fonte-mais" aria-label="Aumentar tamanho da letra">A+</button>
+      <button type="button" class="botao-acess" id="botao-contraste" aria-pressed="false" aria-label="Ativar alto contraste">Alto contraste</button>
+    </div>
+  </div>
+  <nav class="nav-principal" aria-label="Navegação principal">
+    <div class="container">
+      <a class="marca" href="index.html">
+        <svg class="icone-escudo" viewBox="0 0 48 48" aria-hidden="true">
+          <path d="M24 4 L44 12 V22 C44 33 36 41 24 45 C12 41 4 33 4 22 V12 Z" fill="#4F6E93"/>
+          <path d="M24 10 L38 15.5 V22 C38 30.5 32.5 36.5 24 39.5 C15.5 36.5 10 30.5 10 22 V15.5 Z" fill="#1F3A2E"/>
+          <path d="M16 24 L21.5 29.5 L33 17" fill="none" stroke="#F7F2E7" stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+        <span class="marca-texto">Portal de Inclusão Digital<small>Canela e Gramado · RS</small></span>
+      </a>
+      <button type="button" class="botao-menu" id="botao-menu" aria-expanded="false" aria-controls="links-nav" aria-label="Abrir menu">☰ Menu</button>
+      <ul class="links-nav" id="links-nav">
+        <li><a href="index.html">Início</a></li>
+        <li><a href="modulos/informatica-basica.html">Informática Básica</a></li>
+        <li><a href="modulos/navegacao-segura.html">Navegação Segura</a></li>
+        <li><a href="modulos/servicos-digitais.html">Serviços Digitais</a></li>
+        <li><a href="certificado.html" aria-current="page">Certificado</a></li>
+        <li><a href="sobre.html">Sobre o projeto</a></li>
+      </ul>
+    </div>
+  </nav>
+</header>
+
+<main id="conteudo-principal">
+  <section class="cabecalho-modulo">
+    <div class="container">
+      <h1>Seu certificado</h1>
+      <p>Complete a trilha de aprendizagem para gerar seu certificado de participação.</p>
+    </div>
+  </section>
+
+  <section class="secao">
+    <div class="container">
+      <div class="painel-certificado">
+        <h2>Seu progresso</h2>
+        <ul class="progresso-modulos" id="lista-progresso"></ul>
+
+        <div id="aviso-incompleto" class="caixa-dica">
+          <h4>Continue sua trilha</h4>
+          <p>Conclua o quiz de cada módulo com pelo menos 70% de acertos para liberar seu certificado. Os módulos ficam marcados automaticamente neste navegador assim que você é aprovado.</p>
+          <p><a href="modulos/informatica-basica.html">Ir para Informática Básica →</a></p>
+        </div>
+
+        <div id="painel-formulario-certificado" style="display:none;">
+          <h2>Parabéns! Você concluiu a trilha 🎉</h2>
+          <p>Digite seu nome como deseja que apareça no certificado:</p>
+          <form id="form-certificado">
+            <div class="campo-formulario">
+              <label for="campo-nome">Nome completo</label>
+              <input type="text" id="campo-nome" name="nome" required placeholder="Digite seu nome" autocomplete="name">
+            </div>
+            <button type="submit" class="botao botao-primario">Gerar meu certificado</button>
+          </form>
+        </div>
+
+        <div id="tela-certificado">
+          <h2 class="mt-grande">Aqui está o seu certificado</h2>
+          <canvas id="canvas-certificado" role="img" aria-label="Certificado de conclusão do Portal de Inclusão Digital"></canvas>
+          <button type="button" class="botao botao-contorno" id="botao-baixar-certificado">Baixar certificado (imagem)</button>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="rodape">
+  <div class="container">
+    <div>
+      <h4>Portal de Inclusão Digital</h4>
+      <p style="color:var(--hortensia-clara); max-width:40ch;">Projeto de Atividade Extensionista voltado às comunidades de Canela e Gramado, na Serra Gaúcha (RS).</p>
+    </div>
+    <div>
+      <h4>Módulos</h4>
+      <ul>
+        <li><a href="modulos/informatica-basica.html">Informática Básica</a></li>
+        <li><a href="modulos/navegacao-segura.html">Navegação Segura</a></li>
+        <li><a href="modulos/servicos-digitais.html">Serviços Digitais</a></li>
+      </ul>
+    </div>
+    <div>
+      <h4>Projeto</h4>
+      <ul>
+        <li><a href="sobre.html">Sobre o projeto</a></li>
+        <li><a href="certificado.html">Emitir certificado</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="linha-rodape">
+    © 2026 VithTech — Todos os direitos reservados.
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+<script src="js/quiz.js"></script>
+<script src="js/certificado.js"></script>
+</body>
+</html>
