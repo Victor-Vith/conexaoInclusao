@@ -490,7 +490,12 @@ p { max-width: 68ch; }
   padding: 1.5rem;
   margin: 1.2rem 0;
 }
-.moldura-video p { color: var(--creme-2); margin: 0; }
+.moldura-video video { 
+  width: 100%; 
+  height: 100%; 
+  border: block; 
+  object-fit: cover; 
+}
 
 /* ---------- Quiz ---------- */
 .bloco-quiz {
